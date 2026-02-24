@@ -1,0 +1,321 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+header {
+  background-image: url("https://media.istockphoto.com/id/1185842145/vector/white-fishes-on-navy-blue-background-seamless-pattern.jpg?s=612x612&w=0&k=20&c=fHfvbNyLhxTYx6vodL3TeTER7qX6SahVL_IILrsI-8s=");
+  background-size: 8em;
+  padding: 3em;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+}
+
+article {
+  padding: 2.5em;
+  padding-right: 3em;
+  width: 100%;
+  max-width: 1000px;
+  flex-direction: column;
+  display: flex;
+}
+
+article form {
+  border-radius: 5px;
+  padding: 2em;
+  background-color: #f2f2f2;
+  width: 100%;
+  max-width: 600px;
+}
+
+article label {
+  display: block;
+}
+
+article input {
+  width: 100%;
+  padding: 1em;
+  margin: 0.5em 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0.2em;
+}
+
+article select {
+  width: 100%;
+  padding: 1em;
+  margin: 0.5em 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0.2em;
+}
+
+article form textarea {
+  width: 100%;
+  height: 10em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 0.2em;
+  resize: none;
+}
+
+article form a {
+  margin-bottom: 0;
+}
+
+article input[type=submit] {
+  font-size: 1em;
+  background-color: #15406d;
+  border-radius: 1em;
+  text-decoration: none;
+  padding: 1em;
+  color: white;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+article input[type=submit]:hover {
+  background-color: #acacac;
+}
+
+article h2 {
+  color: #15406d;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  border-bottom: 2px solid #b3b7ba;
+  padding-bottom: 0.8em;
+}
+
+article h3 {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+article p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+}
+
+article th {
+  color: #15406d;
+  text-align: left;
+  padding-bottom: 1.5em;
+}
+
+article td {
+  text-align: left;
+  padding: 0.5em;
+  vertical-align: middle;
+}
+
+article tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+article table th:last-child,
+article table td:last-child {
+  width: 1%;
+  white-space: nowrap;
+}
+
+article a {
+  display: block;
+  color: white;
+  background-color: #15406d;
+  border-radius: 1em;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  max-width: 16em;
+  margin-bottom: 3em;
+}
+
+article table a {
+  margin-bottom: 0;
+}
+
+article a:hover {
+  background-color: #acacac;
+}
+
+nav {
+  width: 20%;
+  padding: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #cfcfcf;
+  border-radius: 1em;
+}
+
+nav a.active {
+  background-color: #15406d;
+  border-radius: 1em;
+  color: white;
+}
+
+nav button {
+  width: 100%;
+  font-size: 1em;
+  background-color: #15406d;
+  border-radius: 1em;
+  text-decoration: none;
+  max-width: none;
+  padding: 1em;
+  color: white;
+  margin-top: 1em;
+  cursor: pointer;
+  border: none;
+}
+
+nav button:hover {
+  background-color: #acacac;
+}
+
+nav button:disabled {
+  background-color: #dddddd;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  min-width: 5em;
+  max-width: 12em;
+}
+
+.btn-back {
+  min-width: 5em;
+  max-width: 12em;
+  color: white;
+  background-color: #15406d;
+  border-radius: 1em;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  max-width: 16em;
+  margin-bottom: 3em;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-back:hover {
+  background-color: #acacac;
+}
+
+.btn-delete {
+  background-color: rgb(184, 34, 34);
+  border-radius: 1em;
+  text-decoration: none;
+  max-width: none;
+  color: white;
+  cursor: pointer;
+  border: none;
+  min-width: 5em;
+  max-width: 12em;
+  font-size: 1em;
+}
+
+.btn-delete:hover {
+  background-color: #acacac;
+}
+
+.user-container {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.lang-container {
+  margin-top: 2em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.lang-container button {
+  padding: 0.5em;
+  width: 5em;
+  margin-right: 0.5em;
+}
+
+.pagination {
+  margin-top: 2em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.pagination button {
+  min-width: 5em;
+  max-width: 12em;
+  font-size: 1em;
+  background-color: #15406d;
+  border-radius: 1em;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 1em;
+  height: 4em;
+  margin-right: 0.5em;
+}
+
+.pagination button:hover {
+  background-color: #acacac;
+}
+
+footer {
+  background-color: #15406d;
+  padding: 1.5em;
+  text-align: center;
+  color: white;
+  margin-top: auto;
+}
+
+@media print {
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    nav {
+        display: none;
+    }
+}
